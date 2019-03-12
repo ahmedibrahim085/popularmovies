@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailedActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_movie_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_64"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            tools:text="movie_title_tv" />
+
+
+        <LinearLayout
+            android:id="@+id/movie_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_movie_title"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/padding_8"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/iv_movie_details_poster"
+                android:layout_width="@dimen/padding_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="false"
+                android:contentDescription="@string/iv_movie_poster"
+                tools:src="@drawable/ic_launcher_background" />
+
+            <include
+                layout="@layout/movie_details_view"
+                android:layout_width="@dimen/padding_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_movie_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/movie_details"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:padding="@dimen/padding_4"
+            tools:text="This is the Movie description"/>
+
+        <View style="@style/Divider"
+            android:id="@+id/v_divider"
+            android:layout_below="@id/tv_movie_description"/>
+
+        <TextView
+            android:id="@+id/tv_trailers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v_divider"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:padding="@dimen/padding_4"
+            android:text="@string/tv_trailers"
+            tools:text="Trailers:" />
+
+        <include
+            android:id="@+id/trailer_recycle_view"
+            layout="@layout/trailer_main_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_trailers"
+            android:layout_marginStart="@dimen/padding_4" />
+
+        <View style="@style/Divider"
+            android:id="@+id/v_review_divider"
+            android:layout_below="@+id/trailer_recycle_view"/>
+        <TextView
+            android:id="@+id/tv_review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v_review_divider"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:padding="@dimen/padding_4"
+            android:text="@string/tv_reviews"
+            tools:text="Reviews:" />
+
+        <include
+            android:id="@+id/review_recycler_view"
+            layout="@layout/movie_review_main_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_review"
+            android:layout_marginStart="@dimen/padding_4" />
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

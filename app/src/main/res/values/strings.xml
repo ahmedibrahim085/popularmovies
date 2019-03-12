@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" tools:ignore="MissingTranslation">Popular Movies #2</string>
+    <string name="movie_poster">movie poster</string>
+    <string name="iv_movie_poster">Movie Poster</string>
+    <string name="bt_mark_as_not_favorite_movie">ADD\nFAVORITE</string>
+    <string name="bt_mark_as_favorite_movie">REMOVE\nFAVORITE</string>
+    <string name="tst_err_movie_details">Something went wrong, unable to get Movie Details</string>
+    <string name="btn_trailer_play">This is the trailer play button</string>
+    <string name="tv_trailers">Trailers:</string>
+    <string name="tv_trailers_err">Sorry, No trailers found</string>
+    <string name="tv_get_trailers_err">Error getting Movie Trailer</string>
+    <string name="txt_shld_online">You should be online to get movie list</string>
+    <string name="txt_conct_first">You should be online to see Movie Details</string>
+    <string name="txt_add_tmbd_key">Please add your TMDB KEY First</string>
+    <string name="txt_failed_to_get_movie_list">Failed to Get Movies List</string>
+    <string name="txt_api_key_value_missing">API KEY MISSING</string>
+
+    <string name = "menu_favorite">Favorite Movies</string>
+    <string name="menu_show_favorite">MY FAVORITES</string>
+    <string name="txt_error_getting_movie_trailer">Error getting Movie Trailer</string>
+    <string name="txt_error_getting_movie_reviews">Error getting movie reviews</string>
+    <string name="txt_error_parsing_movie_reviews_list">Failed to Parse Movie Review List</string>
+
+    <string name="tv_reviews">Reviews</string>
+    <string name="tv_reviews_err">No reviews found for this movie</string>
+
+    <string name="txt_err_no_fvrt_movies_to_show">NO FAVORITE MOVIES SAVED</string>
+
+
+</resources>

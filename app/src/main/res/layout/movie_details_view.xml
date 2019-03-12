@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_4">
+
+    <!-- MOVIE_RELEASE_DATE -->
+    <TextView
+        android:id="@+id/tv_movie_release_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="MOVIE_RELEASE_DATE"
+        android:padding="@dimen/padding_4"/>
+
+    <!-- MOVIE_RUNTIME -->
+    <TextView
+        android:id="@+id/tv_movie_runtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="MOVIE_RUNTIME"
+        android:padding="@dimen/padding_4"/>
+
+    <!-- MOVIE_VOTE_AVERAGE -->
+    <TextView
+        android:id="@+id/tv_movie_vote_average"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="MOVIE_VOTE_AVERAGE"
+        android:padding="@dimen/padding_4"/>
+
+    <!-- MARK_AS_FAVORITE -->
+    <Button
+        android:id="@+id/btn_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:visibility="invisible"
+        tools:text="@string/bt_mark_as_not_favorite_movie"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/padding_4"/>
+</LinearLayout>

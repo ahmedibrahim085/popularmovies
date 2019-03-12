@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:id="@+id/view_review_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:showIn="@layout/activity_detailed">
+
+    <TextView
+        android:id="@+id/tv_movie_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_centerInParent="true"
+        android:text="This is a Movie Review"
+        tools:text="This is a Movie Review"/>
+
+    <ImageView
+        android:id="@+id/iv_movie_review_separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv_movie_review"
+        android:background="@color/black"/>
+
+</RelativeLayout>
